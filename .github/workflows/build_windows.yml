@@ -9,6 +9,8 @@ jobs:
     runs-on: windows-latest
     
     steps:
+    - name: deps
+      run: git clone https://github.com/MrFrenik/gunslinger.git third_party/include/gs
     - name: Checkout repository
       uses: actions/checkout@main
       with:
