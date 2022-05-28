@@ -22,6 +22,6 @@ src=(
 )
 
 # Build
-gcc -O3 ${inc[*]} ${src[*]} ${flags[*]} -lm -o ${proj_name}
+clang -O3 ${inc[*]} ${src[*]} ${flags[*]} -lm -o ${proj_name}
 
 cd ..

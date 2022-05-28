@@ -40,14 +40,14 @@ void app_update()
 	gsi_rotatev(gsi, gs_deg2rad(90.f), GS_ZAXIS); gsi_rotatev(gsi, t, GS_YAXIS);
 	gsi_sphere(gsi, 0.f, 0.f, 0.f, 1.f, 50, 150, 200, 50, GS_GRAPHICS_PRIMITIVE_LINES);
 	gsi_camera2D(gsi, fbs.x, fbs.y);
-	gsi_text(gsi, fbs.x * 0.5f - 70.f, fbs.y * 0.5f, "Hello, Gunslinger.", NULL, false, 255, 255, 255, 255);
+	gsi_text(gsi, fbs.x * 0.5f - 70.f, fbs.y * 0.5f, "Game.", NULL, false, 255, 255, 255, 255);
 	gsi_renderpass_submit(gsi, cb, fbs.x, fbs.y, gs_color(10, 10, 10, 255));
 
     // Render gui
     gs_gui_begin(gui, fbs); 
     if (gs_gui_window_begin(gui, "App", gs_gui_rect(100, 100, 200, 200))) {
         gs_gui_layout_row(gui, 1, (int[]){-1}, 0);
-        gs_gui_text(gui, "Hello, Gunslinger.");
+        gs_gui_text(gui, "Hello, balls");
         gs_gui_window_end(gui);
     }
     gs_gui_end(gui);
