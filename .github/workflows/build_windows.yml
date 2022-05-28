@@ -11,8 +11,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@main
-        with:
-          submodules: 'true'
+      with:
+        submodules: 'true'
     - uses: ilammy/msvc-dev-cmd@v1
     - name: build
       run: .\proc\win\cl.bat
