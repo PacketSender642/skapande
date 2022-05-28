@@ -7,7 +7,7 @@ rm -rf bin
 mkdir bin
 cd bin
 
-proj_name=App
+proj_name=Skapande
 proj_root_dir=$(pwd)/../
 
 flags=(

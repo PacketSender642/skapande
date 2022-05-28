@@ -1,7 +1,7 @@
 
 bin/vc140.pdb
-bin/App.exe
-bin/App.ilk
-bin/App.pdb
+bin/Skapande.exe
+bin/Skapande.ilk
+bin/Skapande.pdb
 bin/main.obj
-bin/App
+bin/Skapande

@@ -4,7 +4,7 @@ mkdir bin
 pushd bin
 
 rem Name
-set name=App
+set name=Skapande
 
 rem Include directories 
 set inc=/I ..\third_party\include\
