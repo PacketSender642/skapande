@@ -9,6 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@main
+    - name: Checkout repository
+      uses: actions/checkout@main
+        with:
+          submodules: 'true'
     - name: build
       run: bash ./proc/linux/gcc.sh
