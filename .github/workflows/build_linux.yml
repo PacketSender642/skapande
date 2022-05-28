@@ -9,11 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+
     - name: deps
       run: git clone https://github.com/MrFrenik/gunslinger.git third_party/include/gs
     - name: Checkout repository
       uses: actions/checkout@main
-      with:
-        submodules: 'true'
+    - name: ls
+      run: ls
     - name: build
       run: bash ./gcc.sh
