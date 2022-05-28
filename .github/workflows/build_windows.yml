@@ -1,0 +1,15 @@
+name: CIWindows
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  build_windows:
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@main
+    - uses: ilammy/msvc-dev-cmd@v1
+    - name: build
+      run: .\proc\win\cl.bat
