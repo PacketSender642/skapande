@@ -17,4 +17,4 @@ jobs:
         submodules: 'true'
     - uses: ilammy/msvc-dev-cmd@v1
     - name: build
-      run: .\proc\win\cl.bat
+      run: .\cl.bat
